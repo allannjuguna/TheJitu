@@ -3,4 +3,6 @@ green
 blue
 yellow
 purple
-
+maroon
+cyan
+rose gold
