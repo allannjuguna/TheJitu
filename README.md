@@ -12,6 +12,9 @@
 - HTML/CSS/JS
 - PHP
 
+## Tasks
+- Task 1 : Create a project, Make atleast 3 commits and push
+- Task 2 : Create three branches(python,php,java branch), create three pull requests, Merge the three branches with master  
 
 <br/>
 
