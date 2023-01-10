@@ -6,3 +6,5 @@ purple
 maroon
 cyan
 rose gold
+black
+navy blue
