@@ -8,5 +8,3 @@ cyan
 rose gold
 black
 navy blue
-pink
-gray
