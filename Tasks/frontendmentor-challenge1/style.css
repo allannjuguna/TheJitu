@@ -55,7 +55,6 @@ body {
 .header-links > li {
   display: inline-block;
   padding:5px;
-  /*background:red;*/
 }
 
 .header-links > li > a {
@@ -134,7 +133,6 @@ body {
 }
 
 .two > h1 {
-  /*background-color:red;*/
   padding-top:30px;
   font-family: "InterBold",Arial,san-serif;
   color:rgb(234, 167, 76);
@@ -202,7 +200,6 @@ body {
 }
 
 .logo-holder {
-  background: red; 
   flex-grow: 2;
 }
 .logo-holder > img {
