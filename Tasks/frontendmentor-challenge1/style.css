@@ -1,0 +1,349 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+@font-face{
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face{
+  font-family: "InterBold";
+  src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+  margin-top: 3vh;
+  max-height: 100vh;
+  display: grid;
+  justify-items:center;
+  background-color: white;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+.header-image{
+  float:left;
+}
+
+.header-links,.header-image-right{
+  display: flex;
+  gap:20px;
+  font-family: "Inter",Arial,san-serif;
+  float:right;
+  /*border:2px solid blue;*/
+
+}
+
+.header-image-right{
+  display: none;
+}
+
+.header-links > li {
+  display: inline-block;
+  padding:5px;
+  /*background:red;*/
+}
+
+.header-links > li > a {
+  text-decoration: none;
+  color:gray;
+}
+.header-links > li > a:hover,.topic > h2:hover, .description > h2:hover {
+  color:rgb(234, 167, 76);
+  cursor: pointer;
+}
+
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five
+}
+
+.six {
+  grid-area: six
+}
+
+.seven {
+  grid-area: seven;
+}
+
+
+
+.grid-container{
+  width: 80%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'one one two'
+  'three four two'
+  'five six seven';
+  gap:40px;
+  /*min-height:10vh;*/
+}
+
+
+.item {
+  /*background: rgb(39,39,39,0.1);*/
+  background: white;
+  min-height:9vh;
+  height:100%;
+}
+
+
+.one{
+  background:url('assets/images/image-web-3-desktop.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  height: 40vh;
+}
+
+.two {
+  background:rgb(0, 0, 26);
+  color:white;
+  padding:20px;
+}
+
+.two > h1 {
+  /*background-color:red;*/
+  padding-top:30px;
+  font-family: "InterBold",Arial,san-serif;
+  color:rgb(234, 167, 76);
+  font-weight: bold;
+}
+
+.topic {
+  padding:35px 20px 5px 0px;
+  height:30%;
+}
+
+.topic > h2 {
+  font-family: "Inter",Arial,san-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.topic > p {
+  padding:10px 0px;
+  font-size: 15px;
+  color: rgb(255,255,255,0.7);
+  font-family: monospace;
+}
+
+
+.three { /*The Bright Future*/
+  color: black;
+
+  background:white;
+  font-size:30px;
+  text-align:left;
+  font-family: "InterBold",Arial,san-serif;
+}
+
+.four {
+  font-family: "Inter",Arial,san-serif;
+  font-size: 16px;
+  padding:20px;
+  background:white;
+  color:rgb(39,39,39,0.8);
+}
+
+.four > button {
+  margin-top: 20px;
+  width:50%;
+  height:6vh;
+  font-weight: bold;
+  color:white;
+  border:none;
+  text-transform: uppercase;
+  background:rgb(239, 92, 80);
+
+}
+
+.four > button:hover {
+  background:rgb(0, 0, 26);
+  cursor: pointer;
+
+}
+
+.bottom{
+  display: flex;
+  margin-top:7vh;
+  height: 20vh;
+  /*flex-flow: row-reverse;*/
+}
+
+.logo-holder {
+  background: red; 
+  flex-grow: 2;
+}
+.logo-holder > img {
+  height: 100%;
+  width: 100%;
+}
+
+.description{
+  padding:0px;
+  padding-left:10px;
+}
+
+
+.description > h1 {
+  font-family: "InterBold",Arial,san-serif;
+  color: rgb(39,39,39,0.2);
+  padding-bottom:10px;
+}
+
+.description > h2 {
+  font-family: "InterBold",Arial,san-serif;
+}
+
+.description > p {
+  font-family: "Inter",Arial,san-serif;
+  padding-top:10px;
+  padding-bottom:0px;
+  color:gray;
+}
+
+
+
+
+
+
+/*Large screens*/
+ /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 2500px) {
+  body {
+    /*background-color: yellow;*/
+  }
+  /*Laptop full screen*/
+  p,a {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  /*Divided mode*/
+  .grid-container{
+    width: 90%;
+    gap:10px;
+  }
+  body{
+    /*background-color: red;*/
+  }
+}
+
+/*Tablets*/
+ /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+  width:85%;
+  margin: 5% auto;
+    background-color: blue;
+  }
+}
+
+
+/*Mobile phones*/
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body {
+    margin:0px;
+    width: 100%;
+    background-color: white;
+    /*border:4px solid blue;*/
+  }
+
+  .header{
+    height:4vh;
+  }
+
+  .header-links{
+    display: none;
+  } 
+
+  .header-image-right{
+    display: flex;
+  }
+
+  .grid-container{
+    /*border:4px solid red;*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item{
+    max-height: 30vh;
+  }
+  .header{
+    height: 0vh;
+    order: -7;
+  }
+
+.one{
+  order:-6;
+}
+  .two,.three,.four{
+    margin:0;
+    max-height: 25vh;
+  }
+  .two {
+    max-height: 100vh;
+    order:-4;
+    height:auto;
+  }
+
+  .topic {
+    padding: 5px;
+    height: auto;
+    /*border: 1px solid red;*/
+  }
+
+.four {
+  order: -5;
+  margin-bottom: 5vh;
+}
+
+.three{
+  order:-5;
+}
+ .bottom{
+  gap:4%;
+  /*background-color: yellow;*/
+  height:auto;
+ }
+}
