@@ -43,12 +43,13 @@ body {
 
 
 .grid-container{
-	width: 85%;
+	width: 80z%;
 	height:70vh;
 	margin-top:20vh;
 	/*margin: 10vh auto;*/
 	/*background:yellow;*/
 	display: grid;
+	justify-content: center;
 	grid-template-areas: 
 	'one two three four'
 	'one five six seven'
@@ -72,6 +73,8 @@ body {
 .one {
 	display: flex;
 	flex-direction: column;
+	background: red;
+	max-height:100%;
 	/*gap:20px;*/
 }
 .profile-grid,.period-grid{
@@ -117,8 +120,36 @@ body {
 .two {
 }
 
+.two > .image-section {
+	background:rgb(252, 138, 99);
+}
+
+.three > .image-section {
+	background:#55C0E3;
+}
+
+.four > .image-section {
+	background:rgb(252, 93, 124);
+}
+
+.five > .image-section {
+	background:rgb(74, 205, 129);
+}
+
+.six > .image-section {
+	background:rgb(113, 53, 207);
+}
+
+.seven > .image-section {
+	background:rgb(239, 197, 90);
+}
+
+
+.two > .image-section {
+	background:rgb(252, 138, 99);
+}
+
 .image-section{
-	background: orange;
 	display: flex;
 	justify-content: space-between;
 	border-radius: inherit;
@@ -127,6 +158,9 @@ body {
 
 .image-section > img {
 	margin-right:20px;
+	/*border:1px solid red;*/
+	height:80px;
+	min-width:80px;
 }
 
 .inner-section{
