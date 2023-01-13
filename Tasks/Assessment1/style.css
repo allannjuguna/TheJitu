@@ -1,0 +1,152 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	color:white;
+}
+
+
+
+body {
+	background: rgb(13, 19, 35);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.one {grid-area:one;}
+.two {grid-area:two;}
+.three {grid-area:three;}
+.four {grid-area:four;}
+.five {grid-area:five;}
+.six {grid-area:six;}
+.seven {grid-area:seven;}
+
+
+
+.grid-container{
+	width: 90%;
+	height:70vh;
+	margin-top:20vh;
+	/*margin: 10vh auto;*/
+	/*background:yellow;*/
+	display: grid;
+	grid-template-areas: 
+	'one two three four'
+	'one five six seven'
+	;
+	gap:20px;
+}
+
+.section {
+	min-height:40px;
+	width:400px;
+	border-radius: 20px;
+	background:yellow;
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+}
+
+
+/*Css for the first grid*/
+
+.one {
+	display: flex;
+	flex-direction: column;
+	/*gap:20px;*/
+}
+.profile-grid,.period-grid{
+	border-radius: inherit;
+}
+
+.profile-grid{
+	height: 70%;
+	background:rgb(86, 70, 232);
+	z-index: 10;
+}
+
+.period-grid{
+	z-index: 5;
+	margin-top:-40px;
+	background:rgb(29, 32, 74);
+	height: 40%;
+}
+
+
+.profile-image{
+	border:1px solid red;
+}
+
+.profile-image > img{
+	margin:50px;
+	border-radius:50%;
+	height:100px;
+	border:3px solid white;
+
+}
+
+.profile-name{
+	border:1px solid yellow;
+	padding:30px;
+}
+
+.two,.three,.four,.five,.six,.seven{
+	background-color:blue;
+	height:300px;
+}
+
+.two {
+}
+
+.image-section{
+	background: orange;
+	display: flex;
+	justify-content: space-between;
+	border-radius: inherit;
+
+}
+
+.image-section > img {
+	margin-right:20px;
+}
+
+.inner-section{
+	margin-top: -30px;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	background:rgb(29, 32, 74); 
+	border-radius: 10px;
+	gap:20px;
+
+}
+.inner-heading{
+	color:white;
+	border-radius:inherit;
+	/*border:1px solid cyan;*/
+	height:50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top:20px;
+	padding: 20px;
+}
+
+
+.inner-description{
+	/*border: 1px solid red;*/
+	padding:20px;
+	height: 100%;
+}
+
+.hours {
+	padding:10px;
+	font-size: 50px;
+}
+
+.last-week{
+	color: rgb(255,255,255,0.8);
+	padding:10px;
+}
