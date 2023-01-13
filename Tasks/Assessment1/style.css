@@ -6,16 +6,22 @@
 }
 
 
-/*@font-face{
-  font-family: "Inter";
-  src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+@font-face{
+  font-family: "Rubik";
+  src: url(./fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 
+
 @font-face{
+  font-family: "RubikBold";
+  src: url(./fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+/*@font-face{
   font-family: "InterBold";
   src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
-}
-*/
+}*/
+
 
 
 body {
