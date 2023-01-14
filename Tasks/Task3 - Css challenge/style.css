@@ -1,0 +1,86 @@
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box; 
+	font-family: "Montserrat";
+}
+
+
+
+body {
+	background: cyan;
+}
+
+.section {
+	background:url('images/hero.png');
+	background-size: 100% 100%;
+	background-position: center;
+	min-height:60vw;
+}
+
+.first-section-title{
+	/*background: black;*/
+	height:6vh;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	width:90%;
+	margin:20px auto;
+}
+
+.left-sub-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*background:red;*/
+	gap:40px;
+}
+
+.brand-links{
+	/*background:green;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.list {
+	margin: 20px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+	display: inline-block;
+	/*background :red;*/
+}
+
+.brand-name > li >  a {
+	font-weight: 700;
+	font-size:40px;
+}
+
+.brand-links > li > a,.right-sub-title > li > a,.right-sub-title > button{
+	font-weight: 500;
+	/*color:yellow;*/
+	font-size: 20px;
+}
+
+
+
+.right-sub-title{
+	/*background: red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*gap:40px;*/
+}
+
+.right-sub-title > button {
+	color:white;
+	font-weight: 600;
+	margin:20px;
+	border:none;
+	padding:20px;
+	background:rgb(35, 164, 237);
+	border-radius: 4px ;
+}
