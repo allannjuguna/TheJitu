@@ -236,7 +236,6 @@ a {
 
 .fourth-section{
 	min-height: 30vw;
-	background:red;
 	background:rgb(247, 247, 247);
 	display: flex;
 	/*justify-content: center;*/
@@ -277,9 +276,7 @@ a {
 	/*min-height:34vw;*/
 }
 
-.second-section,.first-section{
-	display: none;
-} 
+
 
 .rating-user{ /*Each independent user box*/
 	height: 32vw;
@@ -311,31 +308,32 @@ a {
 
 .fifth-section {
 	margin-top:20vw;
-	height: 10vh;
-	/*background: red;*/
+	/*height: 10vh;*/
+
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	gap:4vh;
+	gap:10vh;
 }
 
 
 .partners-container {
-	width: 76%;
-	height: 50%;
 	/*background:blue;*/
+	width: 76%;
 	display: flex;
 	justify-content: space-between;
-	gap:10vw;
+	gap:1vw;
 }
 
 
+.partners-container > img {
+	height: 8vh;
+}
+
 .newsletter-container{
-	background:linear-gradient(#014687);
 	background: linear-gradient(to right, #004586,#553186, #CE1487);
 	color:white;
-	height: 20vh;
 	width: 76%;
 	display: flex;
 	flex-direction: row;
@@ -344,9 +342,284 @@ a {
 }
 
 .subscribe-message,.email-section{
-	margin:40px 50px;
-	border: 4px solid red;
-	height: 80%;
+	/*margin:40px 50px;*/
+	/*border: 4px solid red;*/
+	height: 100%;
 	display: flex;
 	align-items: center;
+}
+
+.subscribe-message{
+	width: 30%;
+	padding:20px 40px;
+}
+
+
+.email-section{
+	justify-content: center;
+	height:14vh;
+	width:50%;
+	display: flex;
+	justify-content: center;
+}
+
+.email-section > input {
+	height: 70%;
+	width: 70%;
+	border:none;
+	border-radius: 8px 0px 0px 8px ;
+	background: white;
+}
+
+input[type="text"] {
+	padding:20px;
+	font-size: 20px;
+	color:grey;
+}
+
+.email-section > button {
+	color:white;
+	font-size: 20px;
+	height: 70%;
+	border:1px solid white;
+	border-radius: 0px 8px 8px 0px ;
+	background:rgb(35, 164, 237);
+	padding:10px;
+} 
+
+
+
+
+.seventh-section{
+	background:rgb(37, 42, 65);
+	width: 100%;
+	/*gap:500px;*/
+	display: flex;
+	height: 100vh; 
+	justify-content: center;
+	/*align-items: center;*/
+	gap:3vw;
+}
+
+
+.text-section,.worldmap{
+	max-height: 50%; 
+	margin:2vw;
+}
+
+.text-section{
+	color:white;
+	/*border:4px solid red;*/
+	width: 40%;
+	padding:20px;
+}
+
+.text-section > h1{
+	font-size: 50px;
+	padding:20px;
+}
+
+
+.text-section > p{
+	font-weight: 200;
+	font-size: 23px;
+	padding:10px 20px;
+}
+
+
+
+.worldmap {
+	width: 40%;
+}
+
+
+.worldmap > img{
+	width: 90%;
+	height: 80%;
+}
+
+
+/*.second-section,.first-section,.third-section,.fourth-section,.fifth-section{
+	display: none;
+} 
+*/
+
+/*This is the book appointment section*/
+.form-section{
+	min-height:60vh;
+	background:rgb(247, 247, 247);
+	/*background: black;*/
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+}
+
+
+.form-section-container{
+	background:white;
+	margin-top:-30vh;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-image-container,.form-section-wrapper{
+	padding:20px;
+	background: white;
+	height: 100%;
+}
+
+
+.form-image-container{
+	background-image: url(images/contact.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.form-image-container{
+	width: 37%;
+}
+
+.form-section-wrapper{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+	gap:20px;
+	/*background: red;*/
+}
+.form-section-wrapper > h1{
+	margin-top:20px;
+}
+
+
+
+.form-input-holder{
+	padding:5px;
+	/*background: yellow;*/
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+}
+
+.form-input-holder > label {
+	font-size: 20px;
+	color:rgb(37, 42, 65);
+	font-weight: 600;
+}
+
+.form-input-holder > input,.form-input-holder > select{
+	background:rgb(247, 247, 247);
+	border:1px solid rgb(27, 27, 27,0.3);
+	border-radius: 8px;
+	width:100%;
+}
+
+.form-input-holder > select{
+	padding: 20px;
+	font-size: 20px; 
+	color:rgb(27, 27, 27,0.5);
+	font-weight: 500;
+}
+
+
+input[type="text"] {
+	font-weight: 500;
+}
+
+.form-input-holder > button{
+	padding:25px;
+	border: none;
+	background:rgb(35, 164, 237);
+	border-radius: 8px;
+	color: white;
+	font-weight: 600;
+	font-size:20px;
+}
+
+
+/* This is the Consulting Section*/
+.consulting-section{
+	background:rgb(247, 247, 247);
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.consulting-container{
+	padding:20px;
+	width: 76%;
+	height: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.consulting-section-right,.consulting-section-left{
+	/*border:4px solid red;*/
+	min-width: 20%;
+	min-height:4vw;
+}
+
+.consulting-section-right > button {
+	padding:25px;
+	width: 100%;
+	border: none;
+	background:rgb(35, 164, 237);
+	border-radius: 8px;
+	color: white;
+	font-weight: 600;
+	font-size:20px;
+}
+
+.consulting-section-left{
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+}
+
+.consulting-section-left > h1 {
+	color:rgb(37, 42, 65);
+}
+.consulting-section-left > p {
+	color: rgb(39,39,39,0.6);
+	font-size: 20px;
+}
+
+/* This is the info Section*/
+.info-section{
+	height: 40vh;
+	/*background: green;*/
+	width: 76%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:2vw;
+	/*border: 3px solid yellow;*/
+}
+
+.info-sub-section{
+	/*border: 1px solid red;*/
+	height:80%;
+	width: 19vw;
+}
+
+.info-sub-section > h1 {
+	padding:20px;
+	font-size: 24px;
+	/*color:rgb(39,39,39,0.9); */
+	font-weight: 600;
+}
+
+.info-sub-section > p {
+	color:rgb(39,39,39,0.6);
+	font-weight: 500;
+	font-size: 20px; 
+	padding:10px 20px ; 
 }
