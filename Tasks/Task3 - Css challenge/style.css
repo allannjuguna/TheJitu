@@ -407,13 +407,14 @@ input[type="text"] {
 }
 
 .pricing-container{
-	/*height:100%;*/
 	display: flex;
 	background:rgb(247, 247, 247);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap:10px;
+	margin-bottom: 20vh;
+
 }
 
 
