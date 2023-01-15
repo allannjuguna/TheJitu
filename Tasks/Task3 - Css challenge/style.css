@@ -444,6 +444,7 @@ input[type="text"] {
 	width: 30vw;
 	min-height:90vh;
 	display: flex;
+	color:white;
 	flex-direction: column;
 	align-items: center;
 	gap:6vh;
@@ -451,9 +452,11 @@ input[type="text"] {
 }
 
 .pricing-push{
+	color:rgb(37, 42, 65);
 	margin-top: 8vh;
 	background: white;
 }
+
 
 .sub-package{
 	text-align: center;
@@ -525,8 +528,14 @@ input[type="text"] {
 .image-description{
 	/*border:4px solid blue;*/
 	color:rgb(37, 42, 65);
-	font-size: 12px;
+	font-size: 23px;
 	width: 80%;
+	font-weight: 500;
+}
+
+
+.white{
+	color:white;
 }
 
 
@@ -541,7 +550,7 @@ input[type="text"] {
 	color:white;
 	font-size: 25px;
 	width: 100%;
-	border:1px solid white;
+	border: none;
 	background:rgb(35, 164, 237);
 	padding:20px;
 }
