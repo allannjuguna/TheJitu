@@ -279,7 +279,7 @@ a {
 
 
 .rating-user{ /*Each independent user box*/
-	height: 32vw;
+	height: 31vw;
 	background:white;
 	display: flex;
 	justify-content: center;
@@ -299,8 +299,17 @@ a {
 	color: rgb(39,39,39,0.7);
 	text-align: center;
 	font-size: 23px;
-	margin: 53px 62px;
-	border:4px solid red;
+	margin: 40px 62px;
+}
+
+
+.rating-stars{
+	/*background:red;*/
+	/*height:400px;*/
+}
+.rating-stars > img {
+	height:3vh;
+	/*height:400px;*/
 }
 
 /*This is the fifth section*/
@@ -395,12 +404,10 @@ input[type="text"] {
 /*This is the pricing section*/
 .pricing-section{
 	min-height:120vh;
-	border:4px solid green ;
 }
 
 .pricing-container{
 	/*height:100%;*/
-	border: 4px solid yellow;
 	display: flex;
 	background:rgb(247, 247, 247);
 	flex-direction: column;
@@ -431,7 +438,6 @@ input[type="text"] {
 	display: flex;
 	justify-content: center;
 	/*align-items:center;*/
-	border: 4px solid red;
 	width: 90%;
 	min-height: 110vh;
 	gap:4px;
