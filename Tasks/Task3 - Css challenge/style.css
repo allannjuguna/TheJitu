@@ -8,7 +8,7 @@
 
 
 body {
-	background: white;
+	background:rgb(247, 247, 247);
 }
 
 .section {
@@ -31,9 +31,8 @@ body {
 }
 
 .first-section-title{
-	width:90%;
+	width:90vw;
 	padding-top:1vw;
-	/*background: black;*/
 	min-height:6vh;
 	display: flex;
 	justify-content: space-between;	
@@ -318,7 +317,7 @@ a {
 .fifth-section {
 	margin-top:20vw;
 	/*height: 10vh;*/
-
+	background:rgb(247, 247, 247);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -529,7 +528,7 @@ input[type="text"] {
 
 .image-left > img {
 	width: 50px;
-	height: 40px;
+	height: 50px;
 }
 
 .image-description{
@@ -768,9 +767,9 @@ input[type="text"] {
 /* This is the info Section*/
 .info-section{
 	height: 40vh;
-	/*background: green;*/
-	width: 76%;
-	margin: auto;
+	background: white;
+	width: 100%;
+	padding: 1vw 12vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -796,4 +795,12 @@ input[type="text"] {
 	font-weight: 500;
 	font-size: 20px; 
 	padding:10px 20px ; 
+}
+
+
+
+@media screen and (max-width: 600px){
+	body {
+		background:red;
+	}
 }
