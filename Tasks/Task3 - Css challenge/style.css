@@ -6,8 +6,6 @@
 	transition: all .5s ease-in-out;
 }
 
-
-
 body {
 	background:rgb(247, 247, 247);
 }
@@ -84,6 +82,10 @@ a {
 	/*gap:40px;*/
 }
 
+.right-sub-title > img {
+	display: none;
+}
+
 .right-sub-title > button {
 	color:white;
 	font-weight: 600;
@@ -94,9 +96,6 @@ a {
 	border-radius: 4px ;
 }
 
-.menu-icon {
-	display: none;
-}
 
 
 .first-section-body{
@@ -186,6 +185,9 @@ a {
 	background:rgb(35, 164, 237);
 	color:white;
 }
+.second-sub-section > h1{
+	color: rgb(37, 42, 65);
+}
 
 .second-sub-section:hover > p{
 	color:white;
@@ -235,6 +237,10 @@ a {
 	text-align: center;
 }
 
+.third-sub-section > h1{
+	color: rgb(37, 42, 65);
+}
+
 .third-sub-section > p { 
 	color:grey;
 	font-size: 1vw;
@@ -267,6 +273,7 @@ a {
 
 .fourth-header > h1 {
 	padding: 20px;
+	color: rgb(37, 42, 65);
 	font-size:58px;
 } 
 .fourth-header > p {
@@ -823,8 +830,8 @@ input[type="text"] {
 
 .info-sub-section > h1 {
 	padding:20px;
-	font-size: 24px;
-	/*color:rgb(39,39,39,0.9); */
+	font-size: 24px;	
+	color: rgb(37, 42, 65);
 	font-weight: 600;
 }
 
