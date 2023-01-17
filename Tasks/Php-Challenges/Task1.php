@@ -12,23 +12,24 @@ For units above 100 - Ksh. 50 per unit
 
 /*Method - Using if else */
 function calculate($units){
-	if ($units < 20){
+	if ($units < 21){
 		return 35;
-	}else if($units < 49){
+	}else if($units < 50){
 		return 40;
-	}else if ($units < 100){
+	}else if ($units < 101){
 		return 45;
 	}else{
 		return 50;
 	}
 }
 
-$message="Testing";
+$message="";
 if (isset($_POST['submit']) && isset($_POST['units'])){
 	$units=intval($_POST['units']);
 	if ($units > 0){
 		$rate=calculate($units);
-		$message="The rate for ".$units." units is ". $rate; 
+		$amount=$rate * $units;
+		$message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh ".$amount; 
 	}else{
 		$message="Units can't be a negative value or string";
 	}
