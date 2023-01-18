@@ -106,6 +106,7 @@ input[type="submit"] {
 </style>
 
 <form method="POST" action="">
+	<h1 style="font-size:40px;">Water Bill Calculator</h1>
 	<h1>Enter the number of units to calculate</h1>
 	<input type="text" class="input" name="units" placeholder="Enter units e.g 20">
 	<input type="submit" class="button" name="submit" value="Calculate">
