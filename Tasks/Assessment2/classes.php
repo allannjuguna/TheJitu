@@ -1,7 +1,4 @@
 <?php
-
-
-
 class BillCalculator{
 	private $units;
 	function __construct($units){
@@ -20,12 +17,5 @@ class BillCalculator{
 			return 50;
 		}
 	}
-
 }
-
-
-
-
-
-
 ?>

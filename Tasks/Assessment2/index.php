@@ -28,15 +28,9 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 		// $message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh <b>".$amount."</b>"; 
 		$message="Units : ".$units."</br> Rate : Ksh ". $rate. ".00 <br/> Total : Ksh <b>".$amount.".00</b>"; 
 	}else{
-		$message="Units cannot be empty,negative or zero";
+		$message="<span style='color:red'>Units cannot be empty,negative or zero</span>";
 	}
 }
-
-
-// $units=10;
-// $instance=new BillCalculator("10");
-// $rate=$instance->calculateBill();
-// echo 'The rate is ' . $rate;
 ?>
 
 
