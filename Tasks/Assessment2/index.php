@@ -50,6 +50,9 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
+	<div class="logo">
+		<img src="images/water-outline.svg" alt="image">
+	</div>
 
 <div class="form-container">
 	<form method="POST" action="">
