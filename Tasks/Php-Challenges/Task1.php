@@ -29,9 +29,9 @@ if (isset($_POST['submit']) && isset($_POST['units'])){
 	if ($units > 0){
 		$rate=calculate($units);
 		$amount=$rate * $units;
-		$message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh ".$amount; 
+		$message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh <b>".$amount."</b>"; 
 	}else{
-		$message="Units can't be a negative value or string";
+		$message="Units can't be empty,a negative value or string";
 	}
 }
 
@@ -62,7 +62,7 @@ if (isset($_POST['submit']) && isset($_POST['units'])){
 		width: 90vw;
 		text-align: center;
 		border-radius:8px;
-		height:40vh;
+		min-height:60vh;
 		display: flex;
 		flex-direction: column;
 		gap:2vh;
@@ -100,14 +100,14 @@ input[type="submit"] {
 .result {
 	text-align: center;
 	color:grey;
-	font-size:20px;
+	font-size:3vw;
 }
 
 </style>
 
 <form method="POST" action="">
-	<h1 style="font-size:40px;">Water Bill Calculator</h1>
-	<h1>Enter the number of units to calculate</h1>
+	<h1 style="font-size:3vw;">Water Bill Calculator</h1>
+	<h1 style="font-size:2vw;">Enter the number of units to calculate</h1>
 	<input type="text" class="input" name="units" placeholder="Enter units e.g 20">
 	<input type="submit" class="button" name="submit" value="Calculate">
 	<p class="result"><?php echo $message;?></p>
