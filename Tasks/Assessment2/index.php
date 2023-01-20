@@ -28,7 +28,7 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 		// $message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh <b>".$amount."</b>"; 
 		$message="Units : ".$units."</br> Rate : Ksh ". $rate. ".00 <br/> Total : Ksh <b>".$amount.".00</b>"; 
 	}else{
-		$message="<span style='color:red'>Units cannot be empty,negative or zero</span>";
+		$message="<span style='color:red'>Units cannot be empty,string,negative or zero</span>";
 	}
 }
 ?>
@@ -41,9 +41,6 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 	<div class="logo">
 		<img src="images/water-outline.svg" alt="image">
 	</div>
@@ -52,7 +49,7 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 	<form method="POST" action="">
 		<h1>Water Bill Calculator</h1>
 		<h2>Enter the number of units to calculate</h2>
-		<input type="text" class="input" name="units" placeholder="Enter units e.g 20">
+		<input type="text" class="input" name="units" placeholder="Enter units e.g 20" required>
 		<input type="submit" class="button" name="submit" value="Calculate">
 		<p class="result"><?php echo $message;?></p>
 	</form>
