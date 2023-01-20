@@ -17,7 +17,7 @@ For units above 100 - Ksh. 50 per unit
 
 include 'classes.php';
 
-$message="Default message";
+$message="";
 
 if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 	if(!empty($_POST['units']) && intval($_POST['units']) > 0){/*Units are not empty*/
@@ -25,7 +25,8 @@ if (isset($_POST['submit']) && isset($_POST['units'])){/*Form submitted*/
 		$instance=new BillCalculator($units);
 		$rate=$instance->calculateBill();
 		$amount=intval($units) * $rate;
-		$message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh <b>".$amount."</b>"; 
+		// $message="The rate for ".$units." units is Ksh ". $rate. " and the total amount is Ksh <b>".$amount."</b>"; 
+		$message="Units : ".$units."</br> Rate : Ksh ". $rate. ".00 <br/> Total : Ksh <b>".$amount.".00</b>"; 
 	}else{
 		$message="Units cannot be empty,negative or zero";
 	}
