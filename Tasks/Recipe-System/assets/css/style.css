@@ -1,15 +1,22 @@
+@font-face{
+  font-family: "Bull";
+  src: url("../fonts/Bulletto Killa.ttf");
+}
+
 * {
 	padding:0;
 	margin:0;
 	box-sizing: border-box;
 	color:white;
+	font-family: "Montserrat";
 }
 
 
 body {
 	background:rgb(39,39,39,0.1);
-	background:rgb(29,32,74,0.8);
+	/*background:rgb(29,32,74,0.8);*/
 	background:rgb(29,32,74);
+	background: white;
 }
 
 .header{
@@ -24,7 +31,7 @@ body {
 }
 
 .main-container{
-	height: 100vh;
+	max-height: 100vh;
 	margin:0 auto;
 	width: 95%;
 }
@@ -37,13 +44,15 @@ body {
 	padding:12px;
 	color:black;
 	background: white;
+	background: rgb(0,0,0,0.1);
 }
 
 h1 {
-	color:rgb(239, 92, 80);
-	color:white;
 	font-size:36px;
-	font-family: monospace;
+}
+.header > h1 {
+	color:rgb(0, 69, 134);
+	/*font-family: monospace;*/
 }
 
 
@@ -53,16 +62,16 @@ h1 {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	gap:2vw;
+	gap:1vw;
 }
 
 .row-item {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 26vw;
-	width: 22vw;
-	box-shadow: 1px 1px 50px rgb(39,39,39,0.3);
+	height: 24vw;
+	width: 23vw;
+	/*box-shadow: 1px 1px 50px rgb(39,39,39,0.2);*/
 }
 
 .item-image-holder {
@@ -101,27 +110,22 @@ h1 {
 	grid-area: one;
 	width: 100%;
 	height: 100%;
-	border:4px solid green;
 }
 
 .description{
 	grid-area:two;
-	border:4px solid green;
 }
 
 .ingredients{
 	grid-area:three;
-	border:4px solid green;
 }
 .equipment{
 	grid-area:four;
-	border:4px solid green;
 }
 
 
 .view-item-row{
-	font-family: "Montserrat";
-	height: 35vw;
+	min-height: 35vw;
 	margin:2vw auto;
 	display: grid;
 	grid-template-areas: 
@@ -136,9 +140,36 @@ h1 {
 	/*background: cyan;*/
 	display: flex;
 	align-items: center;
+	/*max-width: 30vw;*/
 	flex-direction: column;
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 }
+
+
+.details{
+	padding:20px;
+	border-radius: 8px;
+	background: rgb(39,39,39,0.5);
+	background: rgb(0,0,0,0.1);
+
+}
+
+
+.details > p {
+	padding:10px;
+	font-size:20px;
+}
+
+
+.item-value{
+	margin:10px 20px;
+	font-size: 20px;
+}
+
+.ingredients,.description,.equipment{
+	width:65vw;
+}
+
 
 .view-image-holder{
 	height: 80%;
@@ -160,17 +191,27 @@ h1 {
 	align-items: center;
 }
 
-.details{
-	padding:20px;
-	border-radius: 8px;
 
+.view-image-title,.item-title{
+	color:black;
+	background:rgb(0, 69, 134);
+}
+
+
+.details > h1 {
+	color:rgb(0, 69, 134);
+}
+
+
+.details > p,.details > li  {
+	color:black;
 }
 
 
 
 
 /*Tablet screens*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
 	body{
 		/*background: cyan;*/
 	}
@@ -199,11 +240,77 @@ h1 {
 	}
 
 	.item-title > h1 > a {
-		font-size: 1.7vw;
+		padding:0px;
+		margin:0px;
+		font-size: 17px;
+	}
+
+	.view-item-row{
+		width: 80vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap:2vw;
+	}
+
+	.details{
+		padding:20px;
+		width: 100%;
 	}
 
 
+	.details > p {
+		padding:10px;
+		font-size:20px;
+	}
+
+
+	.item-value{
+		margin:10px 20px;
+		font-size: 20px;
+	}
+
+	.ingredients,.description,.equipment{
+		width:100%;
+	}
+
+
+	.view-image-title{
+		padding:20px;
+	}
+
+
+	.view-image-title,.item-title{
+		color:black;
+		background:rgb(0, 69, 134);
+	}
+
+
+	.details > h1 {
+		font-size:23px;
+	}
+
+
+	.details > p,.details > li  {
+		padding:0px;
+		margin:0px 10px;
+		font-size:15px;
+	}
+
+
+
 } 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -222,10 +329,10 @@ h1 {
 		padding:20px 5vw;
 		flex-direction: column;
 		align-items: flex-start;
-		gap:2vh;
+		gap:1vh;
 	}
 	h1 {
-		font-size:26px;
+		font-size:36px;
 	}
 	.header > input[type="text"]{	
 		width: 100%;
@@ -235,7 +342,7 @@ h1 {
 	.row {
 		flex-direction: column;
 		width: 100%;
-		gap:4vh;
+		gap:2vh;
 	}
 
 	.row-item {
@@ -244,11 +351,42 @@ h1 {
 		flex-direction: column;
 		height: 70vw;
 		width: 100%;
-		box-shadow: 1px 1px 50px rgb(39,39,39,0.5);
+		/*box-shadow: 1px 1px 50px rgb(39,39,39,0.5);*/
 	}
 
 	.item-title > h1 > a {
 		font-size: 20px;
 	}
 
+
+	/*View item page*/
+	.one {
+		grid-area: one;
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+	.view-item-row{
+		width: 99%;
+		min-height: 35vw;
+		margin:2vw auto;
+		display: flex;
+		flex-direction: column;
+		gap:4vw;
+	}
+
+
+	.details{
+		width: 100%;
+		padding:20px;
+
+	}
+
+
+
 } 
+
+
+

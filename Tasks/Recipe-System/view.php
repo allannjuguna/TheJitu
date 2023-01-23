@@ -24,6 +24,17 @@ if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){
 	} 
 }
 
+
+function stringTolist($str){
+	$arr = explode(",", $str);
+	$final="";
+	foreach ($arr as $value) {
+		$final.='<li class="item-value">'.$value."</li>";
+	}
+	return $final;
+}
+
+
 ?>
 
 <style type="text/css">
@@ -51,13 +62,13 @@ if (isset($_GET['title']) && !(empty(trim($_GET['title'])))){
 		<div class="details ingredients">
 			<h1>Ingredients</h1>
 			<p>
-				<?php echo $ingredients;?>
+				<?php echo stringTolist($ingredients);?>
 			</p>
 		</div>
 		<div class="details equipment">
 			<h1>Equipment</h1>
 			<p>
-				<?php echo $equipment;?>
+				<?php echo stringTolist($cookingEquipment);?>
 			</p>
 		</div>
 
