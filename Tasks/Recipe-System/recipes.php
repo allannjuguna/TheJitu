@@ -55,23 +55,23 @@ $six=new Recipe(
 $seven=new Recipe(
 	"assets/food/recipe-3.jpeg",
 	"Vegetable Soup",
-	"description",
-	"carrots, celery, onions, potatoes, tomatoes,Olive oil or butter,Salt and pepper,thyme, rosemary,Optional: protein (e.g. chicken, beef, or beans)",
+	"Delicious beef soup",
+	"onions, potatoes, tomatoes,Olive oil or butter,Salt and pepper,thyme, rosemary, beef",
 	"Cutting board,Knife,Pot or large saucepan,Stove or hot plate"
 );
 
 $eight=new Recipe(
 	"assets/food/recipe-4.jpeg",
 	"Banana Pancakes",
-	"description",
-	"ingredients",
-	"cooking equipment"
+	"pancakes that include mashed ripe bananas as one of the main ingredients. They are often considered a healthier alternative to traditional pancakes as they use less sugar and butter",
+	"1 cup all-purpose flour,1 teaspoon baking powder,1/4 teaspoon baking soda,1/4 teaspoon salt,1/4 cup sugar,1 cup milk,1 egg,1 teaspoon vanilla extract,1 ripe banana, mashed",
+	"Mixing bowls,Whisk or fork,Griddle or non-stick pan,Spatula"
 );
 
 $nine=new Recipe(
 	"assets/food/ugali.webp",
 	"Ugali",
-	"description",
+	"Delicious Dish made from cornmeal or maize flour and is often served with a variety of stews, soups, or vegetables. ",
 	"Flour, Water",
 	"Sufuria, Cooking Stick"
 );
@@ -79,14 +79,10 @@ $nine=new Recipe(
 $ten=new Recipe(
 	"assets/food/ham_cheese.png",
 	"Ham and Cheese",
-	"description",
-	"ingredients",
-	"cooking equipment"
+	"A classic sandwich combination that can be prepared in a variety of ways",
+	"2 slices of bread (white, wheat, or your preference),2-3 slices of deli ham,2-3 slices of cheese (cheddar, Swiss, or your preference),Butter or mayonnaise,Lettuce and tomato",
+    "A cutting board,A knife,A skillet or griddle"
 );
-
-
-
-
 
 
 
