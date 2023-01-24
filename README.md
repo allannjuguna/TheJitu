@@ -9,14 +9,15 @@
 <br/>
 
 ## Techstack
-- HTML/CSS/JS
+- HTML5
+- CSS3
 - PHP
+- JS
 
-## Tasks
-- Task 1 : Create a project, Make atleast 3 commits and push
-- Task 2 : Create three branches(python,php,java branch), create three pull requests, Merge the three branches with main
-
-<br/>
-
-
-
+## Tasks	
+- [x] Assessment1
+- [x] Assessment2
+- [x] Php-Challenges
+- [x] frontendmentor-challenge1
+- [x] Task3-Css-Challenge
+- [x] Recipe-System
