@@ -21,3 +21,9 @@
 - [x] frontendmentor-challenge1
 - [x] Task3-Css-Challenge
 - [x] Recipe-System
+
+
+
+## Samples
+![Desktop](./Tasks/Recipe-System/assets/screenshots/desktop_one.jpg)
+![Desktop](./Tasks/Recipe-System/assets/screenshots/desktop_two.jpg)
