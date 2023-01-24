@@ -34,7 +34,7 @@ class RecipeCollection {
 		}/*Closing the for loop*/
 
 		if ($final === ""){
-			return '<h3>Recipe "'.$slug.'" could not be found!</h3>';
+			return '<h3 style="text-align:center;width: 100%;align-content: center;">Recipe for "'.$slug.'" could not be found!</h3>';
 		}
 		return $final;
 	}

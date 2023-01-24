@@ -198,7 +198,7 @@ h1 {
 }
 
 
-.details > h1 {
+.details > h1,h3 {
 	color:rgb(0, 69, 134);
 }
 
